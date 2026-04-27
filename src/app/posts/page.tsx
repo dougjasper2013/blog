@@ -4,6 +4,7 @@ import {
     getAllPosts,
     getFilteredPosts,
 } from '@/data/queries';
+import { NewPost } from '@/components/NewPost';
 
 export default async function Posts({
   searchParams,
@@ -25,6 +26,7 @@ export default async function Posts({
   return (
     <main>
       <h2>{resolvedHeading}</h2>
+      <NewPost />
       <ul>
         {resolvedPosts.map((post) => (
           <li key={post.id}>
