@@ -1,6 +1,9 @@
 import { createClient } from '@libsql/client';
-
 import { postsSchema, postSchema } from './schema';
+
+// async function delay() {
+//   await new Promise((resolve) => setTimeout(resolve, 1000));
+// }
 
 export async function getAllPosts() {
   // await delay();
